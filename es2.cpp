@@ -27,11 +27,13 @@ int main(){
     inFile.open(path_file1);
     fetch(inFile,string_buf,path_file1);
     inFile.close();
+    inFile.clear();
 
     //fase fetch on file2
     inFile.open(path_file2);
     fetch(inFile,string_buf,path_file2);
     inFile.close();
+    inFile.clear();
 
     //fase writing on the union file
     outFile.open(final_path);
